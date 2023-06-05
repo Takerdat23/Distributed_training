@@ -5,11 +5,11 @@ from tqdm import tqdm
 
 from peft import LoraConfig, get_peft_model
 from transformers import AutoConfig, AutoTokenizer
-from transformers import AutoModelForCausalLM, LoraModelForCasualLM, LoraConfig
+from transformers import AutoModelForCausalLM,  LoraConfig
 
 from contextlib import nullcontext
 
-
+from lora_model import LoraModelForCasualLM
 from utils.common import download_from_driver
 from prepare_data import create_datasets
 from torch.distributed import init_process_group,  destroy_process_group
