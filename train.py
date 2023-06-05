@@ -9,7 +9,7 @@ from transformers import AutoModelForCausalLM, LoraModelForCasualLM, LoraConfig
 
 from contextlib import nullcontext
 
-from lora_model import LoraModelForCasualLM
+
 from utils.common import download_from_driver
 from prepare_data import create_datasets
 from torch.distributed import init_process_group,  destroy_process_group
